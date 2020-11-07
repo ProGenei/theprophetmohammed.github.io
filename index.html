@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+<title>محمد رسول الله</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+  @import url('https://fonts.googleapis.com/css?family=Changa:400,700&subset=arabic'); 
+  
+  body { 
+    animation: fadeInAnimation ease 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+  } 
+  
+  @keyframes fadeInAnimation { 
+    0% { 
+      opacity:0; 
+    } 
+    100% { 
+      opacity: 1; 
+    } 
+  } 
+  
+  body {
+      font-family: 'Changa';
+       margin: 0;
+       color: #777d71;
+       font-weight: bold;
+  }
+  
+  .a {
+    color: #f7f6e7;
+    font-family: 'Changa';
+  }
+  
+  .polaroid {
+    width: 60%;
+    box-shadow: 0 0  10px 10px rgba(0, 0, 0, 0.1), 0 0 10px 4px rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 12px;
+    font-size: 3.5vw;
+    margin: auto;
+    transition: box-shadow .3s;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .polaroid {
+      width: 30%;
+      font-size: 2vw;     
+    } 
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .p {
+      font-size: 2.5vw;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) { 
+    .p {
+      font-size:4.5vw; 
+    }
+  }
+    
+  @media screen and (min-width: 1000px) {
+    ul {
+      width: 14vw;
+      font-size: 1.5vw;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    ul {
+      width: 18vw;
+      font-size: 2.5vw;
+    }
+  }
+  
+  img {
+    border-radius: 12px 12px 0 0;
+  } 
+  
+  .box {
+    padding: 10px;
+    border: 0;
+  }
+  
+  .polaroid:hover {
+    transition: .5s all;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+  }
+  
+  #lol {
+    float: right;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color:#DFDDC5;
+    z-index:100;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: -2px 2px 10px #777d71;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+  }
+  
+  li .href {
+    display: block;
+    color:#777d71;
+    padding: 8px;
+    text-decoration: none; 
+  }
+  
+  /* Change the link color on hover */
+  li .href:hover {
+    background-color: #777d71;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  /* Style the body */
+  
+  .box-contain {
+      margin-top: auto;
+      padding-bottom:20px;
+  }
+  
+  .container {   
+      display: inline-block;
+          cursor: pointer;
+          float: right;
+          padding: 18px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 5.5px;
+    background-color: #f7f6e7;
+    margin: 5.5px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px)
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  .h1 {
+   text-align: center;
+   font-size: 23px;
+  }
+  
+  .img {
+   border-radius: 100px;
+   height: 50px;
+   width: 50px;
+   float: left;
+  }
+  
+  /* Header/Logo Title */
+  
+  .front-content {
+   font-size: 28px;
+   text-align: center;
+   padding: 0;
+   color: #00B8C4;
+  }
+  
+  .header {
+   padding: 2vw;
+   text-align: left;
+   background: #777d71;
+   color: #f7f6e7;
+   font-size: 12px;
+   font-family: 'jazeera';
+  }
+  
+  .footer {
+    padding: 40px;
+    text-align: center;
+    background: #222;
+    color: white;
+    font-size: 15px;
+  }
+  
+  h4, .img {
+  padding: 10px;
+  }
+  
+  h4:hover {
+      color: #bbd38b
+  }
+  
+  .hrefs {
+    text-decoration: none;
+    color: #777d71;
+  }
+  
+  .background {
+   background: #f7f6e7;
+  }
+  
+  /* Page Content */
+  
+  .content {
+   color: #777d71;
+  }
+  
+  .front-image1 {
+   text-align: center;
+   border-radius: 100px;
+  }
+  
+  .contacts {
+   text-align: center;
+   background: #FCF3F1;
+   color: #5F5F5F;
+   padding: 30px;
+  }
+  
+  .contacts-img {
+   margin: 0 5px 0 5px;
+  }
+  
+  .contents {
+   text-align: center;
+   padding: 25px;
+   font-size: 20px;
+  }
+  
+  </style>
+</head>
+
+<body>
+<div class="header">
+  <div id="demo1" class="container" onclick="myFunction(this);">
+    <div id="demo2" onclick="myFunction2(this);">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</div>
+
+  <a href = "index.html"><img class = img src="https://meaningnames.net/Diwani/Taha-Name-in-Arabic-Calligraphy.jpg"></a>
+
+  <a class = "a" href = "index.html" style = "text-decoration: none ;"><h4>محمد رسول الله</h4></a>
+
+</div>
+
+<div id = "lol">
+<ul id = "myDIV">
+  <li><a class="href" href="index.html">الرسول ﷺ</a></li>
+  <li><a class="href" href="#projacts">تأملات</a></li>
+  <li><a class="href" href="#projacts">كتب</a></li>
+  <li><a class="href" href="#hh">حول</a></li>
+  <li><a class="href" href="#contact">للتواصل</a></li>
+</ul>
+</div>
+
+<div class="background">
+<div class="content">
+<br>
+</div>
+
+
+<br>
+<br>
+
+
+<div class="box-wrap">
+
+
+<div class="box">
+  
+    <div class="polaroid">
+      <a class="hrefs" href="who.html">
+      <img src="https://i.pinimg.com/564x/71/56/02/715602502758d4e7e0d80ad0df47e2e7.jpg"  style="width:100%">
+      <div class="containers">
+        <p class = "box-contain"> من هو ﷺ ؟</p>
+      </div>
+    </a>
+    </div>
+    <br>
+
+    </div>
+    <br>
+
+    <div class="box">
+     
+        <div class="polaroid">
+          <a class="hrefs" href="manners.html">
+          <img class="1img"  src="https://i.pinimg.com/564x/67/86/17/6786174ec55d3cdeddbb07396a8bd1e5.jpg"  style="width:100%">
+          <div class="containers">
+            <p class ="box-contain">أخلاقه ﷺ</p>
+          </div>
+          </a>
+        </div>
+     
+        <br>
+     
+    </div>
+    <br>
+    
+    <div class="box">
+      <div class="polaroid">
+        <a class="hrefs" href="b.html">
+        <img class="1img"  src="https://i.pinimg.com/564x/be/6c/40/be6c40e70a5bb13c790df04105cd245f.jpg"  style="width:100%">
+        <div class="containers">
+          <p class ="box-contain"> بعثته ﷺ</p>
+        </div>
+        </a>
+      </div>
+      <br>
+  </div>
+  <br>
+  
+
+    <div class="box">
+    <div class="polaroid">
+      <a class="hrefs" href="lifebefore.html">
+      <img class="1img"  src="https://i.pinimg.com/564x/19/95/17/1995178d4fb4926cf2bd6f678629c988.jpg"  style="width:100%">
+      <div class="containers">
+        <p class ="box-contain">
+          
+         حياته ﷺ
+        (قبل الهجرة)
+        </p>
+      </div>
+      </a>
+    </div>
+    <br>
+</div>
+<br>
+
+<div class="box">
+  <div class="polaroid">
+    <a class="hrefs" href="hijra.html">
+    <img class="1img"  src="https://i.pinimg.com/564x/d1/98/0c/d1980c69075db4b5a6b28c593329f58c.jpg"  style="width:100%">
+    <div class="containers">
+      <p class ="box-contain">هجرته ﷺ </p>
+    </div>
+    </a>
+  </div>
+  <br>
+</div>
+<br>
+
+
+<div class="box">
+    <div class="polaroid">
+      <a class="hrefs" href="lifeafter.html">
+      <img class="1img"  src="https://i.pinimg.com/564x/96/24/88/962488bc3806cbecaf8698c1d2c74d5e.jpg"  style="width:100%">
+      <div class="containers">
+        <p class ="box-contain">
+         حياته ﷺ
+        (بعد الهجرة)
+        </p>
+      </div>
+      </a>
+    </div>
+    <br>
+</div>
+<br>
+
+  
+<div class="box">
+    <div class="polaroid">
+      <a class="hrefs" href="who.html">
+      <img class="1img"  src="https://i.pinimg.com/564x/44/ee/e3/44eee3126c08630ab55cfcb50dcfb02d.jpg"  style="width:100%">
+      <div class="containers">
+        <p class ="box-contain">أصحابه ﷺ</p>
+      </div>
+      </a>
+    </div>
+    <br>
+</div>
+<br>
+
+  
+<div class="box">
+    <div class="polaroid">
+      <a class="hrefs" href="who.html">
+      <img class="1img"  src="https://i.pinimg.com/564x/f2/f5/1a/f2f51a1baa64b9a84caf1eaa8cb3a278.jpg"  style="width:100%">
+      <div class="containers">
+        <p class ="box-contain">مواقفه ﷺ</p>
+      </div>
+      </a>
+    </div>
+    <br>
+</div>
+</div>
+<br>
+
+
+
+<div class="footer">
+<div>
+<div class="contacts-img">
+<a href = "https://twitter.com/IeWU632j6UjsoXp"><img class="contacts-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6IzY1QTJEOTsiIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1NiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzNBN0NBNTsiIGQ9Ik0zOTMuMDE0LDEzOS4zMjZjLTI2LjcwMywyMy4xNjktNTMuMjUzLDQzLjQ3NS03NC45NTQsNzEuODUyDQoJYy01My4zODEsNjQuMzcyLTExOC42MTMsMTU1LjctMjA3LjM4NiwxNDIuMDg2bDE1OC42MSwxNTguMzk2YzEzNC40NTYtNi44NzMsMjQxLjQ5Ny0xMTcuNDkzLDI0Mi42ODYtMjUzLjM3NkwzOTMuMDE0LDEzOS4zMjZ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTM5Ny44NzIsMTYyLjQ3MWMtNi41MTMsMi44ODktMTMuMjcxLDUuMTY3LTIwLjIwOCw2LjgxNWM3LjY0NC03LjI2MSwxMy4zOS0xNi4zNDYsMTYuNjMxLTI2LjQ4NA0KCWMwLjkyNi0yLjg5My0yLjIxOS01LjM5OC00LjgzMi0zLjg0OGMtOS42NSw1LjcyNS0yMC4wNDQsMTAuMDE2LTMwLjg5NCwxMi43NjJjLTAuNjI4LDAuMTYtMS4yNzYsMC4yNC0xLjkyOSwwLjI0DQoJYy0xLjk3OSwwLTMuODk2LTAuNzMzLTUuNDExLTIuMDY1Yy0xMS41NDItMTAuMTc0LTI2LjM5LTE1Ljc3Ny00MS44MDUtMTUuNzc3Yy02LjY3MiwwLTEzLjQwNSwxLjA0LTIwLjAxNiwzLjA5MQ0KCWMtMjAuNDg3LDYuMzUzLTM2LjI5NSwyMy4yNTQtNDEuMjU3LDQ0LjEwM2MtMS44Niw3LjgxOC0yLjM2MiwxNS42NDgtMS40OTYsMjMuMjY0YzAuMDk3LDAuODc2LTAuMzE0LDEuNDg2LTAuNTY5LDEuNzcyDQoJYy0wLjQ1LDAuNTAyLTEuMDg0LDAuNzkxLTEuNzQ1LDAuNzkxYy0wLjA3MiwwLTAuMTUtMC4wMDMtMC4yMjQtMC4wMWMtNDQuODQ2LTQuMTY4LTg1LjI4Ny0yNS43NzItMTEzLjg2OS02MC44MzcNCgljLTEuNDU1LTEuNzg5LTQuMjUzLTEuNTY5LTUuNDE1LDAuNDIyYy01LjU5Niw5LjYwNi04LjU1NCwyMC41ODktOC41NTQsMzEuNzY2YzAsMTcuMTI3LDYuODg0LDMzLjI3LDE4LjgzNyw0NS4wMzkNCgljLTUuMDI3LTEuMTkzLTkuODkzLTMuMDctMTQuNDE0LTUuNTgyYy0yLjE4OC0xLjIxNC00Ljg3NywwLjM1LTQuOTA4LDIuODUxYy0wLjMxLDI1LjQ0NSwxNC41ODgsNDguMDg3LDM2LjkwNSw1OC4yODINCgljLTAuNDUsMC4wMS0wLjksMC4wMTQtMS4zNSwwLjAxNGMtMy41MzcsMC03LjEyMS0wLjMzOC0xMC42NDUtMS4wMTVjLTIuNDYzLTAuNDY3LTQuNTMyLDEuODY3LTMuNzY4LDQuMjUzDQoJYzcuMjQ2LDIyLjYxOCwyNi43MTcsMzkuMjg4LDUwLjAyMSw0My4wN2MtMTkuMzM5LDEyLjk4My00MS44NjMsMTkuODMtNjUuMzAyLDE5LjgzbC03LjMwNi0wLjAwM2MtMi4yNTUsMC00LjE2LDEuNDY5LTQuNzMsMy42NQ0KCWMtMC41NjUsMi4xNDUsMC40NzQsNC40MTMsMi4zOTYsNS41M2MyNi40MTIsMTUuMzcyLDU2LjU0MSwyMy40OTUsODcuMTM4LDIzLjQ5NWMyNi43ODQsMCw1MS44MzgtNS4zMTMsNzQuNDY2LTE1Ljc5OA0KCWMyMC43NDUtOS42MDksMzkuMDc2LTIzLjM0NSw1NC40ODYtNDAuODI3YzE0LjM1Ny0xNi4yODYsMjUuNTgxLTM1LjA4NSwzMy4zNjUtNTUuODc5YzcuNDE4LTE5LjgxNiwxMS4zNC00MC45NjcsMTEuMzQtNjEuMTU0DQoJdi0wLjk2NGMwLTMuMjQxLDEuNDY1LTYuMjkxLDQuMDI0LTguMzdjOS43MDYtNy44ODIsMTguMTYtMTcuMTU4LDI1LjEyMi0yNy41NzJDNDAzLjc5NiwxNjQuNTc4LDQwMC44OTYsMTYxLjEzLDM5Ny44NzIsMTYyLjQ3MQ0KCUwzOTcuODcyLDE2Mi40NzF6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojRDFEMUQxOyIgZD0iTTM5Ny44NzIsMTYyLjQ3MWMtNi41MTUsMi44ODktMTMuMjcxLDUuMTY3LTIwLjIwOCw2LjgxNWM3LjY0NC03LjI2MSwxMy4zOS0xNi4zNDYsMTYuNjMyLTI2LjQ4NA0KCWMwLjkyNi0yLjg5My0yLjIxOS01LjM5OC00LjgzMi0zLjg0OGMtOS42NSw1LjcyNS0yMC4wNDQsMTAuMDE2LTMwLjg5NCwxMi43NjJjLTAuNjI4LDAuMTYtMS4yNzYsMC4yNC0xLjkyOSwwLjI0DQoJYy0xLjk3OSwwLTMuODk2LTAuNzMzLTUuNDExLTIuMDY1Yy0xMS41NDItMTAuMTc0LTI2LjM5LTE1Ljc3Ny00MS44MDUtMTUuNzc3Yy02LjY3MSwwLTEzLjQwNSwxLjA0LTIwLjAxNiwzLjA5MQ0KCWMtMTQuMzIyLDQuNDQxLTI2LjM0MywxNC4wNDgtMzMuOTg1LDI2LjU0NnYyMDUuNDc3YzYuMjIyLTIuMDI5LDEyLjI5My00LjQwMywxOC4xOTgtNy4xMzkNCgljMjAuNzQ1LTkuNjA5LDM5LjA3Ni0yMy4zNDUsNTQuNDg2LTQwLjgyN2MxNC4zNTctMTYuMjg3LDI1LjU4MS0zNS4wODUsMzMuMzY1LTU1Ljg3OWM3LjQxOC0xOS44MTYsMTEuMzQtNDAuOTY3LDExLjM0LTYxLjE1NA0KCXYtMC45NjRjMC0zLjI0MSwxLjQ2NS02LjI5MSw0LjAyNC04LjM3YzkuNzA2LTcuODgyLDE4LjE2LTE3LjE1OCwyNS4xMjItMjcuNTcyQzQwMy43OTYsMTY0LjU3OCw0MDAuODk2LDE2MS4xMywzOTcuODcyLDE2Mi40NzF6Ig0KCS8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" height="50" width="50"></a>
+<img class = "contacts-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6IzZDMjdCMzsiIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1NiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzUwMUE5NjsiIGQ9Ik0zNzQuNzEsMTMyLjkyMmMtMzAuNTg3LDMuODcyLTYyLjQ3OSwzLjczNy05NC41NzUsMC42ODENCgljLTQ0LjgyMi0zLjQ0OC0xMTAuMzMtMjQuMTM1LTEzNC40NjUsMTcuMjM5Yy0zOC43NzIsNjYuMjM2LTE5LjY0OSwxNTEuMDM1LTEwLjYxNCwyMjYuMDc4bDEzNC43MzcsMTM0LjcwOA0KCWMxMzAuMzg4LTYuOTIzLDIzNC44ODYtMTExLjQwNywyNDEuODMxLTI0MS43OUwzNzQuNzEsMTMyLjkyMnoiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzE1LjIyNywxMDkuNDY4SDE5Ni43NzJjLTQ4LjE0LDAtODcuMzA0LDM5LjE2NC04Ny4zMDQsODcuMzA0djExOC40NTUNCgkJYzAsNDguMTM4LDM5LjE2NCw4Ny4zMDUsODcuMzA1LDg3LjMwNWgxMTguNDU1YzQ4LjEzOCwwLDg3LjMwNS0zOS4xNjUsODcuMzA1LTg3LjMwNVYxOTYuNzcyDQoJCUM0MDIuNTMyLDE0OC42MzIsMzYzLjM2NywxMDkuNDY4LDMxNS4yMjcsMTA5LjQ2OEwzMTUuMjI3LDEwOS40Njh6IE0zNzMuMDUsMzE1LjIyOGMwLDMxLjkzNC0yNS44ODgsNTcuODIyLTU3LjgyMiw1Ny44MjJIMTk2Ljc3Mw0KCQljLTMxLjkzNCwwLTU3LjgyMi0yNS44ODgtNTcuODIyLTU3LjgyMlYxOTYuNzczYzAtMzEuOTM0LDI1Ljg4OC01Ny44MjMsNTcuODIyLTU3LjgyM2gxMTguNDU1DQoJCWMzMS45MzQsMCw1Ny44MjIsMjUuODksNTcuODIyLDU3LjgyM1YzMTUuMjI4eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMjU2LDE4MC4yMDJjLTQxLjc5NCwwLTc1Ljc5OCwzNC4wMDQtNzUuNzk4LDc1Ljc5OGMwLDQxLjc5MSwzNC4wMDQsNzUuNzk1LDc1Ljc5OCw3NS43OTUNCgkJczc1Ljc5NS0zNC4wMDEsNzUuNzk1LTc1Ljc5NVMyOTcuNzk0LDE4MC4yMDIsMjU2LDE4MC4yMDJMMjU2LDE4MC4yMDJ6IE0yNTYsMzAyLjMxM2MtMjUuNTc5LDAtNDYuMzE2LTIwLjczMy00Ni4zMTYtNDYuMzEzDQoJCXMyMC43MzctNDYuMzE2LDQ2LjMxNi00Ni4zMTZzNDYuMzEzLDIwLjczNSw0Ni4zMTMsNDYuMzE2QzMwMi4zMTMsMjgxLjU3OSwyODEuNTc5LDMwMi4zMTMsMjU2LDMwMi4zMTNMMjU2LDMwMi4zMTN6Ii8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRDFEMUQxOyIgZD0iTTM1MC4xMDMsMTgwLjc3NGMwLDEwLjAzLTguMTMyLDE4LjE2My0xOC4xNjMsMTguMTYzYy0xMC4wMywwLTE4LjE2My04LjEzMy0xOC4xNjMtMTguMTYzDQoJCWMwLTEwLjAzMSw4LjEzMy0xOC4xNjMsMTguMTYzLTE4LjE2M0MzNDEuOTczLDE2Mi42MTEsMzUwLjEwMywxNzAuNzQxLDM1MC4xMDMsMTgwLjc3NEwzNTAuMTAzLDE4MC43NzR6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0QxRDFEMTsiIGQ9Ik0zMTUuMjI4LDEwOS40NjhoLTU5LjgwMnYyOS40ODJoNTkuODAyYzMxLjkzNCwwLDU3LjgyMiwyNS44OSw1Ny44MjIsNTcuODIzdjExOC40NTUNCgkJYzAsMzEuOTM0LTI1Ljg4OCw1Ny44MjItNTcuODIyLDU3LjgyMmgtNTkuODAydjI5LjQ4Mmg1OS44MDJjNDguMTM4LDAsODcuMzA0LTM5LjE2NSw4Ny4zMDQtODcuMzA1VjE5Ni43NzINCgkJQzQwMi41MzIsMTQ4LjYzMiwzNjMuMzY3LDEwOS40NjgsMzE1LjIyOCwxMDkuNDY4eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNEMUQxRDE7IiBkPSJNMjU2LDE4MC4yMDJjLTAuMTkzLDAtMC4zODEsMC4wMTQtMC41NzQsMC4wMTR2MjkuNDgyYzAuMTkxLTAuMDAyLDAuMzgxLTAuMDE0LDAuNTc0LTAuMDE0DQoJCWMyNS41NzksMCw0Ni4zMTMsMjAuNzM1LDQ2LjMxMyw0Ni4zMTZjMCwyNS41NzktMjAuNzMzLDQ2LjMxMy00Ni4zMTMsNDYuMzEzYy0wLjE5MywwLTAuMzgzLTAuMDEyLTAuNTc0LTAuMDE0djI5LjQ4Mg0KCQljMC4xOTMsMC4wMDIsMC4zODEsMC4wMTQsMC41NzQsMC4wMTRjNDEuNzk0LDAsNzUuNzk1LTM0LjAwMiw3NS43OTUtNzUuNzk1QzMzMS43OTUsMjE0LjIwNiwyOTcuNzk0LDE4MC4yMDIsMjU2LDE4MC4yMDJ6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" height="50" width="50">
+<a href = "tel: 0555983241"><img class="contacts-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6Izc1QjczQjsiIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjI1NiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6IzUyODkxRDsiIGQ9Ik0zNjAuMjQxLDE1MS44MjZjLTE0Ljg0My0zLjcxMi0zNi42NzEtMTYuNTMyLTUwLjgtMjEuNjcxDQoJYy01NS4xNjUtMTcuMjM5LTEyOS4yOTMtMy40NDgtMTQ5Ljk4LDYwLjMzN2MtMS43MjQsMS43MjQtNS4xNzIsMS43MjQtNi44OTYsMS43MjRjLTQxLjM3NCw0OC4yNjktMTMuNzkxLDEwNi44ODItMTcuMjM5LDE2MC4zMjMNCgljLTEuMTc3LDE4LjgzOS0xMS4wODMsMzUuNDk3LTIzLjgzMSw0OS41ODhsMTA3LjI4MiwxMDcuMTdDMjMwLjkzMSw1MTEuMDY3LDI0My4zNTUsNTEyLDI1Niw1MTINCgljMTI2LjQzNiwwLDIzMS40NTItOTEuNjY1LDI1Mi4yNDctMjEyLjE2MUwzNjAuMjQxLDE1MS44MjZ6Ii8+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTI0OC44MzcsMTA4LjQ0N2MtNzguMDI5LDMuNzEyLTEzOS42MDQsNjguNjk2LTEzOS4zNjksMTQ2LjgxMQ0KCQljMC4wNzIsMjMuNzkyLDUuODE2LDQ2LjI0OSwxNS45NSw2Ni4wOTVsLTE1LjU1Nyw3NS41MTRjLTAuODQxLDQuMDg2LDIuODQzLDcuNjYzLDYuOTAxLDYuNzAxbDczLjk5NS0xNy41Mw0KCQljMTkuMDExLDkuNDcxLDQwLjM2NCwxNC45MzksNjIuOTYyLDE1LjI4NGM3OS43NTMsMS4yMTksMTQ2LjI1MS02Mi4xMDUsMTQ4Ljc0LTE0MS44MjkNCgkJQzQwNS4xMjEsMTc0LjAzNSwzMzQuNTkxLDEwNC4zNjIsMjQ4LjgzNywxMDguNDQ3TDI0OC44MzcsMTA4LjQ0N3ogTTMzNy4xMywzMzUuOTM2Yy0yMS42NjksMjEuNjY5LTUwLjQ4MywzMy42MDQtODEuMTMsMzMuNjA0DQoJCWMtMTcuOTQ0LDAtMzUuMTI2LTQuMDI3LTUxLjA2Ni0xMS45NjZsLTEwLjMwMi01LjEzNGwtNDUuMzcsMTAuNzQ3bDkuNTQ5LTQ2LjM1NmwtNS4wNzUtOS45NDMNCgkJYy04LjI3Ni0xNi4yMDYtMTIuNDcyLTMzLjcyOC0xMi40NzItNTIuMDg0YzAtMzAuNjQ4LDExLjkzNS01OS40NTksMzMuNjA0LTgxLjEzYzIxLjQ3Ni0yMS40NzgsNTAuNzU5LTMzLjYwNCw4MS4xMzQtMzMuNjA0DQoJCWMzMC42NDQsMCw1OS40NTgsMTEuOTM1LDgxLjEyNywzMy42MDRjMjEuNjY5LDIxLjY2OSwzMy42MDQsNTAuNDgzLDMzLjYwNCw4MS4xMjdDMzcwLjczNSwyODUuMTc3LDM1OC42MDcsMzE0LjQ1OSwzMzcuMTMsMzM1LjkzNg0KCQlMMzM3LjEzLDMzNS45MzZ6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0zMjcuMTE1LDI4Ni41ODJsLTI4LjM4NC04LjE0OWMtMy43MjktMS4wNjktNy43NDktMC4wMS0xMC40NjgsMi43NmwtNi45NDIsNy4wNw0KCQljLTIuOTI2LDIuOTg0LTcuMzY2LDMuOTQxLTExLjI0LDIuMzc0Yy0xMy40MjctNS40MzQtNDEuNjcyLTMwLjU0OC00OC44ODEtNDMuMTA2Yy0yLjA4NC0zLjYyNC0xLjczOS04LjE1MiwwLjgxNy0xMS40NjINCgkJbDYuMDU4LTcuODM5YzIuMzc0LTMuMDcsMi44NzQtNy4xOTcsMS4zMDUtMTAuNzQ3bC0xMS45NDEtMjcuMDA4Yy0yLjg2LTYuNDY4LTExLjEyNi04LjM1Mi0xNi41MjctMy43ODQNCgkJYy03LjkyMSw2LjcwMS0xNy4zMiwxNi44OC0xOC40NjEsMjguMTZjLTIuMDE1LDE5Ljg4Nyw2LjUxNSw0NC45NTQsMzguNzYyLDc1LjA1NWMzNy4yNTcsMzQuNzc4LDY3LjA5NCwzOS4zNjksODYuNTIzLDM0LjY2NA0KCQljMTEuMDE5LTIuNjY3LDE5LjgyNS0xMy4zNjUsMjUuMzc5LTIyLjEyNkMzMzYuOTA2LDI5Ni40NjcsMzMzLjkxLDI4OC41MzUsMzI3LjExNSwyODYuNTgyTDMyNy4xMTUsMjg2LjU4MnoiLz4NCjwvZz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNEMUQxRDE7IiBkPSJNMzU2LjAwNCwxNDcuNzA4bC0yMi4yMjMsMjIuNzc4YzEuMTMxLDEuMDQ1LDIuMjU3LDIuMDk2LDMuMzUxLDMuMTkxDQoJCWMyMS42NywyMS42NjksMzMuNjA0LDUwLjQ4MywzMy42MDQsODEuMTI3YzAsMzAuMzc1LTEyLjEyOCw1OS42NTYtMzMuNjA0LDgxLjEzNGMtMjEuNjY5LDIxLjY2OS01MC40ODMsMzMuNjA0LTgxLjEzLDMzLjYwNA0KCQljLTE3Ljk0NCwwLTM1LjEyNS00LjAyNy01MS4wNjYtMTEuOTY2bC0xMC4zMDItNS4xMzRsLTQ1LjM3LDEwLjc0N2wwLjkzOC00LjU1M2wtNDAuMTc0LDQxLjE3Mg0KCQljMC44ODYsMi42NjMsMy43MDUsNC40NzUsNi43MzQsMy43NThsNzMuOTk1LTE3LjUzYzE5LjAxMSw5LjQ3MSw0MC4zNjQsMTQuOTM5LDYyLjk2MiwxNS4yODQNCgkJYzc5Ljc1MywxLjIxOSwxNDYuMjUzLTYyLjEwNSwxNDguNzQtMTQxLjgyOUM0MDMuODM0LDIxNS4zNTcsMzg1LjY4NiwxNzUuNDM1LDM1Ni4wMDQsMTQ3LjcwOHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRDFEMUQxOyIgZD0iTTMyNy4xMTUsMjg2LjU4MmwtMjguMzg0LTguMTQ5Yy0zLjcyOS0xLjA2OS03Ljc0OS0wLjAxLTEwLjQ2OCwyLjc2bC02Ljk0Miw3LjA3DQoJCWMtMi45MjYsMi45ODQtNy4zNjYsMy45NDEtMTEuMjQsMi4zNzRjLTcuNzU2LTMuMTM5LTIwLjQ1MS0xMi44NDUtMzEuMTg1LTIyLjkwNGwtMTkuNzMyLDIwLjIyNQ0KCQljMC42NzcsMC42NDgsMS4zNTIsMS4yOTUsMi4wNSwxLjk0OGMzNy4yNTcsMzQuNzc4LDY3LjA5NCwzOS4zNjksODYuNTIzLDM0LjY2NGMxMS4wMTktMi42NjcsMTkuODI1LTEzLjM2NSwyNS4zNzktMjIuMTI2DQoJCUMzMzYuOTA2LDI5Ni40NjcsMzMzLjkxLDI4OC41MzUsMzI3LjExNSwyODYuNTgyeiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="  height="50" width="50"></a>
+
+ </div>
+</div>
+
+
+<script>
+
+function myFunction(x) {
+  x.classList.toggle("change");
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ 
+
+
+</script>
+</body>
+</html>
